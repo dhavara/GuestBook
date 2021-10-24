@@ -45,7 +45,7 @@ class CourseController extends Controller
                 'sks' => $data['sks'],
                 'description' => $data['description'],
                 'created_at' => \Carbon\Carbon::now(),
-            'updated_at' => \Carbon\Carbon::now()
+                'updated_at' => \Carbon\Carbon::now()
             )
         );
 
@@ -60,17 +60,17 @@ class CourseController extends Controller
         ]);
     }
 
-    public function editCoursePost(Request $request, $code){
+    public function editCoursePost(Request $request, $code)
+    {
         $data = $request->input();
-            DB::table('courses')->where('code', $code)->update(
+        DB::table('courses')->where('code', $code)->update(
             array(
                 'name' => $data['name'],
                 'code' => $data['code'],
                 'lecturer' => $data['lecturer'],
                 'sks' => $data['sks'],
                 'description' => $data['description'],
-                'created_at' => \Carbon\Carbon::now(),
-            'updated_at' => \Carbon\Carbon::now()
+                'updated_at' => \Carbon\Carbon::now()
             )
         );
 
