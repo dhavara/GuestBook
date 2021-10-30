@@ -9,6 +9,13 @@ class Course extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'code', 'lecturer', 'sks', 'description'];
+    protected $primaryKey = 'code'; //menandakan primaryKey sebagai code
+    public $incrementing = false; //supaya code tidak berubah jadi integer
+
+    // In Laravel 6.0+ make sure to also set $keyType
+    protected $keyType = 'string'; //menandakan data type dari primaryKey sebagai String
+
     // private static $course = [
         // [
         //     'name' => 'Web Development',

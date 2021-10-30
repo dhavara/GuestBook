@@ -78,7 +78,6 @@ class ProjectController extends Controller
                 'description' => $data['description'],
                 'semester' => $data['semester'],
                 'mata_kuliah' => $data['mata_kuliah'],
-                'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
             )
         );
