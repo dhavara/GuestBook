@@ -20,7 +20,7 @@ class ProjectSeeder extends Seeder
             'project' => 'Calculator',
             'description' => 'My Very FIRST projects',
             'semester' => 'ODD',
-            'mata_kuliah' => 'Algorithm Programming',
+            'mata_kuliah' => 'IMT2008',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -30,7 +30,7 @@ class ProjectSeeder extends Seeder
             'project' => 'Accounting',
             'description' => 'Lorem ipsum dolor sit amet',
             'semester' => 'EVEN',
-            'mata_kuliah' => 'Web Programming',
+            'mata_kuliah' => 'IMT2009',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -40,7 +40,7 @@ class ProjectSeeder extends Seeder
             'project' => 'Student Report',
             'description' => 'Lorem ipsum dolor sit amet',
             'semester' => 'ODD',
-            'mata_kuliah' => 'Web Programming',
+            'mata_kuliah' => 'IMT2010',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -50,7 +50,7 @@ class ProjectSeeder extends Seeder
             'project' => 'POS Resto',
             'description' => 'Lorem ipsum dolor sit amet',
             'semester' => 'EVEN',
-            'mata_kuliah' => 'Algorithm Programming',
+            'mata_kuliah' => 'IMT2011',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -60,7 +60,7 @@ class ProjectSeeder extends Seeder
             'project' => 'Online Store',
             'description' => 'Lorem ipsum dolor sit amet',
             'semester' => 'ODD',
-            'mata_kuliah' => 'Entrepreneurship',
+            'mata_kuliah' => 'IMT2012',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
@@ -70,7 +70,7 @@ class ProjectSeeder extends Seeder
             'project' => 'Pet Shop',
             'description' => 'My LAST Project',
             'semester' => 'EVEN',
-            'mata_kuliah' => 'Mobile App Development',
+            'mata_kuliah' => 'UNC2011',
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);

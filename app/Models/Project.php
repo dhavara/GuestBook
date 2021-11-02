@@ -11,6 +11,10 @@ class Project extends Model
 
     protected $fillable = ['code', 'project', 'semester', 'mata_kuliah', 'description'];
 
+    public function course(){
+        return $this->belongsTo(Course::class, 'mata_kuliah', 'code');
+    }
+
 //     private static $projects = [
 //         ['title' => 'Calculator',
 //         'code'=> 'cal', 

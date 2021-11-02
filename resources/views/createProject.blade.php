@@ -20,11 +20,8 @@
                 <label for="inputDescription" class="form-label">Description: </label>
                 <input type="text" class="form-control" name="description" id="description">
 
-                
-                    <label for="inputSemester" class="form-label">Semester: </label>
-                    <input type="text" class="form-control" name="semester" id="semester">
-                    
-              
+                <label for="inputSemester" class="form-label">Semester: </label>
+                <input type="text" class="form-control" name="semester" id="semester">
 
                 <label for="inputMatkul" class="form-label">Mata Kuliah: </label>
                 <input type="text" class="form-control" name="mata_kuliah" id="mata_kuliah">

@@ -9,12 +9,16 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'code', 'lecturer', 'sks', 'description'];
+    protected $fillable = ['code', 'name', 'lecturer', 'sks', 'description'];
     protected $primaryKey = 'code'; //menandakan primaryKey sebagai code
     public $incrementing = false; //supaya code tidak berubah jadi integer
 
     // In Laravel 6.0+ make sure to also set $keyType
     protected $keyType = 'string'; //menandakan data type dari primaryKey sebagai String
+
+    public function projects(){
+        return $this->hasMany(Project::class, 'code', 'mata_kuliah');
+    }
 
     // private static $course = [
         // [

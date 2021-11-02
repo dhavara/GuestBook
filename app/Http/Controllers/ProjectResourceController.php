@@ -21,6 +21,7 @@ class ProjectResourceController extends Controller
             'pagetitle' => 'My Project',
             'projects' => Project::all()
         ]);
+        
     }
 
     /**
