@@ -1,9 +1,9 @@
 @extends('layout.courselayout')
 
-@section('title','My Course')
+@section('title', 'My Course')
 
 @section('page_title')
-<h1>{{ $pagetitle }}</h1>
+    <h1>{{ $pagetitle }}</h1>
 @endsection
 
 @section('main_content')
@@ -14,15 +14,24 @@
         <p><b>SKS: </b>{{ $course['sks'] }}</p>
         <p><b>Description: </b>{{ $course['description'] }}</p>
     </div>
-    @foreach ( $course->projects as $pro)
-        <tr>
-            <th scope="row">{{ $index }}</th>
-            @php $index++ @endphp
-            <td>{{ $pro['code'] }}</td>
-            <td>{{ $pro['project'] }}</td>
-            <td>{{ $pro['semester'] }}</td>
-            <td>{{ $pro['description'] }}</td>
-        </tr>
-    @endforeach
+    <br>
+    <table class="table table-striped">
+    <tr>
+        <th>NO</th>
+        <th>CODE</th>
+        <th>PROJECTS</th>
+        <th>SEMESTER</th>
+        <th>DESCRIPTION</th>
+    </tr>
+        @foreach ($course->projects as $pro)
+            <tr>
+                <th scope="row">{{ $loop->iteration }}</th>
+                {{-- @php $l++ @endphp --}}
+                <td>{{ $pro['code'] }}</td>
+                <td>{{ $pro['project'] }}</td>
+                <td>{{ $pro['semester'] }}</td>
+                <td>{{ $pro['description'] }}</td>
+            </tr>
+        @endforeach
+    </table>
 @endsection
-

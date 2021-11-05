@@ -22,7 +22,7 @@
                     $lecturers = explode('; ', $pro['lecturer']);
                     $lecturerSize = sizeof($lecturers);
                 @endphp
-                <td rowspan="{{ $lecturerSize }}">{{ $loop->index + 1 }}</td>
+                <td rowspan="{{ $lecturerSize }}">{{ $loop->iteration }}</td>
                 <td rowspan="{{ $lecturerSize }}">{{ $pro['code'] }}</td>
                 <td rowspan="{{ $lecturerSize }}"><a href="/mycourse/{{ $pro['code'] }}"> {{ $pro['name'] }}</a></td>
                 <td>{{ $lecturers[0] }}</td>

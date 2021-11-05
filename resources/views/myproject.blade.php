@@ -21,11 +21,11 @@
                 <th>ACTIONS</th>
             </tr>
             @foreach ($projects as $pro)
-                @php($i = $loop->index)
-                @php($i++)
+                {{-- @php($i = $loop->index)
+                @php($i++) --}}
 
                 <tr>
-                    <td>{{ $i }}</td>
+                    <td>{{ $loop->iteration }}</td>
                     <td>{{ $pro['code'] }}</td>
                     <td>{{ $pro['project'] }}</td>
                     <td>{{ $pro['semester'] }}</td>

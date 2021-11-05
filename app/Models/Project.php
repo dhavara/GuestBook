@@ -11,49 +11,50 @@ class Project extends Model
 
     protected $fillable = ['code', 'project', 'semester', 'mata_kuliah', 'description'];
 
-    public function course(){
+    public function course()
+    {
         return $this->belongsTo(Course::class, 'mata_kuliah', 'code');
     }
 
-//     private static $projects = [
-//         ['title' => 'Calculator',
-//         'code'=> 'cal', 
-//         'course'=>'Algorithm Programming'], 
-        
-//         ['title'=>'Accounting', 
-//         'code'=>'acc', 
-//         'course'=>'Web Programming'],
+    //     private static $projects = [
+    //         ['title' => 'Calculator',
+    //         'code'=> 'cal', 
+    //         'course'=>'Algorithm Programming'], 
 
-//         ['title'=>'Student Report', 
-//         'code'=>'stu', 
-//         'course'=>'Web Programming'],
+    //         ['title'=>'Accounting', 
+    //         'code'=>'acc', 
+    //         'course'=>'Web Programming'],
 
-//         ['title'=>'POS Resto', 
-//         'code'=>'pos', 
-//         'course'=>'Algorithm Programming'], 
+    //         ['title'=>'Student Report', 
+    //         'code'=>'stu', 
+    //         'course'=>'Web Programming'],
 
-//         ['title'=>'Online Store', 
-//         'code'=>'onl', 
-//         'course'=>'Entrepreneurship'], 
+    //         ['title'=>'POS Resto', 
+    //         'code'=>'pos', 
+    //         'course'=>'Algorithm Programming'], 
 
-//         ['title'=>'Pet Shop', 
-//         'code'=>'pet', 
-//         'course'=>'Mobile App Development'], 
-// ];
+    //         ['title'=>'Online Store', 
+    //         'code'=>'onl', 
+    //         'course'=>'Entrepreneurship'], 
 
-//     public static function allData(){
-//         return collect (self::$projects);
-//     }
+    //         ['title'=>'Pet Shop', 
+    //         'code'=>'pet', 
+    //         'course'=>'Mobile App Development'], 
+    // ];
 
-//     public static function dataCode($code){
-//         $allProjects = static::allData();
-//         return $allProjects->firstWhere('code', $code);
+    //     public static function allData(){
+    //         return collect (self::$projects);
+    //     }
 
-        // foreach ($allProjects as $pro){
-        //     if ($pro['code']=== $code){
-        //         return $pro;
-        //     }
-        // }
+    //     public static function dataCode($code){
+    //         $allProjects = static::allData();
+    //         return $allProjects->firstWhere('code', $code);
+
+    // foreach ($allProjects as $pro){
+    //     if ($pro['code']=== $code){
+    //         return $pro;
+    //     }
+    // }
 
     // }
 }
