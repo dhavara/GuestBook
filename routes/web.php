@@ -4,6 +4,8 @@ use App\Models\Project;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectResourceController;
 use App\Http\Controllers\CourseResourceController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
@@ -44,3 +46,10 @@ Route::get('/contact', [Controller::class, 'contact']);
 
 Route::resource('/myproject', ProjectResourceController::class);
 Route::resource('/mycourse', CourseResourceController::class);
+Route::resource('/students',StudentController::class);
+Route::resource('/members',MemberController::class);
+Route::delete('/members/{nim}/myproject/{id}', [MemberController::class, 'destroy'])->name('membersDelete');
+
+Route::get('/latihan', function () {
+    return view('latihan');
+});

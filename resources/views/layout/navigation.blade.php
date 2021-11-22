@@ -12,6 +12,9 @@
             <a class="nav-link @if($title == 'My Course') {{'active'}} @endif" href="/mycourse">My Course</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link @if($title == 'Students') {{'active'}} @endif" href="/students">Students</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link @if($title == 'My Contact') {{'active'}} @endif" href="/contact">My Contact</a>
         </li>
         

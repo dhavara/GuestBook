@@ -16,6 +16,10 @@ class Project extends Model
         return $this->belongsTo(Course::class, 'mata_kuliah', 'code');
     }
 
+    public function students(){
+        return $this->belongsToMany(student::class, 'members', 'project_id', 'nim');
+    }
+
     //     private static $projects = [
     //         ['title' => 'Calculator',
     //         'code'=> 'cal', 
